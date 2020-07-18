@@ -1,14 +1,35 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package main.multimedia_nikola_simonovic;
 
-/**
- *
- * @author Hp
- */
+
 public class Television {
+    private int Volume;
+    private int currentProgram;
+    private boolean turnOn;
+
+    public int getVolume() {
+        return Volume;
+    }
+
+    public void setVolume(int Volume) {
+        this.Volume = Volume;
+    }
+
+    public int getCurrentProgram() {
+        return currentProgram;
+    }
+
+    public void setCurrentProgram(int currentProgram) {
+        this.currentProgram = currentProgram;
+    }
+
+    public boolean isTurnOn() {
+        return turnOn;
+    }
+
+    public void setTurnOn(boolean turnOn) {
+        this.turnOn = turnOn;
+    }
+    
     
 }
