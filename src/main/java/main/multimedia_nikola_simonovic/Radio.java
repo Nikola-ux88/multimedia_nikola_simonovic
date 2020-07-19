@@ -1,7 +1,10 @@
 
 package main.multimedia_nikola_simonovic;
 
-
+/**
+ *
+ * @author Hp
+ */
 public class Radio {
     private double fmFrequency;
     private int amFrequency;
