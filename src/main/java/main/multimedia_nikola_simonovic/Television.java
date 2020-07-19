@@ -7,8 +7,8 @@ public class Television {
     private int currentProgram;
     private boolean turnOn;
     
-    public Television (int Volume, int currentProgram, boolean turnON) {
-        this.turnOn = turnOn;
+    public Television (int Volume, int currentProgram, boolean customturnON) {
+        this.turnOn = customturnON;
         this.Volume = Volume;
         this.currentProgram = currentProgram;
         
@@ -35,13 +35,17 @@ public class Television {
     }
 
     public void setTurnOn(boolean turnOn) {
-        this.turnOn = turnOn;
+        this.turnOn = customturnON;
     }
     
     public void printAttributes() {
     System.out.println("Turn On " + this.turnOn);
     System.out.println("Volume " + this.Volume);
-    System.out.println("Current Program" + this.currentProgram);
+    System.out.println("Current Program " + this.currentProgram);
     
+    }
+    
+    public void ChangeChannel(int newChannel){
+        this.currentProgram(this.currentProgram() + newChannel);
     }
 }

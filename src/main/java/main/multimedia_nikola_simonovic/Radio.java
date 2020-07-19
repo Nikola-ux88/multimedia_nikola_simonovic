@@ -9,6 +9,12 @@ public class Radio {
     private double fmFrequency;
     private int amFrequency;
     private char band;
+    
+    public Radio (double customfmFrequency, int customamFrequency, char customband){
+     this.fmFrequency = customfmFrequency;
+     this.amFrequency = customamFrequency;
+     this.band = customband;
+    }
 
     public double getFmFrequency() {
         return fmFrequency;
@@ -33,7 +39,11 @@ public class Radio {
     public void setBand(char band) {
         this.band = band;
     }
-    
+    public void printAttributes(){
+    System.out.println("Fm Frequency " + this.fmFrequency);
+    System.out.println("Am Frequency " + this.amFrequency);
+    System.out.println("Band " + this.band);
+    }
     
     
 }
